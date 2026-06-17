@@ -10,7 +10,7 @@ spec:
         #soft limit
         requests:
           memory: "64Mi" 
-          cpu: "200m" 
+          cpu: "100m" 
 
 
         #hard limit 
