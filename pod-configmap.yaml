@@ -8,4 +8,4 @@ spec:
       image: nginx
       envFrom:
       - configMapRef:
-        name: nginx-config # you have to take the name from the configmap which you have created.
+          name: nginx-config # you have to take the name from the configmap which you have created.
