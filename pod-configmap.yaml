@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: pod-configmap
+spec:
+  containers:
+    - name: nginx
+      image: nginx
+      envFrom:
+      - ConfigMapRef:
+        name: nginx-config # you have to take the name from the configmap which you have created.
