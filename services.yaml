@@ -10,5 +10,5 @@ spec:
     component: frontend
   ports:
   - protocol: TCP
-    port: 30
-    targetport: 80
+    port: 30 #services port 
+    targetport: 80 #container port 
