@@ -7,13 +7,16 @@ metadata:
     project: roboshop
     purpose: rs-demo
     tier: frontend
+    component: frontend
 spec:
   replicas: 3
   selector:
+      # using this lables replicaset will select the pods.
     matchLabels:
       project: roboshop
       purpose: rs-demo
       tier: frontend
+      component: frontend
       # this is pod definiton pod is subset of replicaset
   template:
     metadata:
@@ -21,6 +24,7 @@ spec:
         project: roboshop
         purpose: rs-demo
         tier: frontend
+        component: frontend
     spec:
       containers:
       - name: nginx
