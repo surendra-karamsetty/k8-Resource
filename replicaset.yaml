@@ -9,7 +9,7 @@ metadata:
     tier: frontend
     component: frontend
 spec:
-  replicas: 20
+  replicas: 3
   selector:
       # using this lables replicaset will select the pods.
     matchLabels:
