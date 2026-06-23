@@ -3,12 +3,12 @@ kind: Service
 metadata:
   name: nginx
 spec:
- selector:
-    #labels used as a selectors
+  selectors:
     project: roboshop
     env: Prod
     component: frontend
-    ports:
-    - protocol: TCP
-    port: 80 #services port 
-    targetPort: 80 #container port 
+  ports:
+  - protocol: TCP
+    port: 80
+    targetPort: 80
+
